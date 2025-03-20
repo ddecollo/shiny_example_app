@@ -1,8 +1,20 @@
-# shiny_example_app
 
-This repo was created to demonstrate the error I am getting when I am using chromote and shinytest2.
+```{r setup, include=FALSE}
+library(shinytest2)
+```
 
-To see this error, run the testing.Rmd file in app/tests/ . 
+
+```{r}
+app_path <- "../app.R"
+app_dir <- ".."
+#record_test(app_dir)
+```
+
+
+## Run test-shinytest2
+```{r}
+test_app(app_path)
+```
 
 The errors I am receiving are "Error in callback(...) : code: -32602
   message: Target position can only be set for new windows" and "══ Results ═════════════════════════════════════════════════════════════════════════════════════
